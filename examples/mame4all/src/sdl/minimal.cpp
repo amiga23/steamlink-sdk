@@ -273,7 +273,7 @@ int init_SDL(void)
 		return(0);
 	}
 
-	window = SDL_CreateWindow("MAME4ALL", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, window_width, window_height, SDL_WINDOW_FULLSCREEN);
+	window = SDL_CreateWindow("MAME4ALL", 0, 0, window_width, window_height, SDL_WINDOW_FULLSCREEN);
 	if (!window) {
 		fprintf(stderr, "Unable to create window: %s\n", SDL_GetError());
 		return(0);
